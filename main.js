@@ -8,4 +8,9 @@ Bonus:
 se il valore dell'argomento é admin ed il valore di PIN definito é 666 allora stampa in console Welcome Admin
 altrimenti stampa Access restricted*/
 
-console.log('hello node js')
+console.log('Hello Node.js!')
+
+const pin = process.env.PIN
+console.log(pin)
+const argument = process.argv.slice(2)
+console.log(argument)
