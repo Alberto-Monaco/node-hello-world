@@ -12,5 +12,11 @@ console.log('Hello Node.js!')
 
 const pin = process.env.PIN
 console.log(pin)
-const argument = process.argv.slice(2)
+const argument = process.argv[2]
 console.log(argument)
+
+if (argument === 'admin') {
+	console.log('Welcome Admin')
+} else {
+	console.log('Access restricted')
+}
