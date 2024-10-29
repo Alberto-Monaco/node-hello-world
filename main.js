@@ -11,12 +11,22 @@ altrimenti stampa Access restricted*/
 console.log('Hello Node.js!')
 
 const pin = process.env.PIN
-console.log(pin)
+//console.log(pin)
+if (!pin) {
+	console.error('manca il pin')
+	process.exit(1)
+}
 const argument = process.argv[2]
-console.log(argument)
-
+if (!argument) {
+	console.error('manca il argomento')
+	process.exit(1)
+}
+//console.log(argument)
+function canAccess(argument, pin) {}
 if (argument === 'admin' && pin === '666') {
 	console.log('Welcome Admin')
 } else {
 	console.log('Access restricted')
 }
+
+canAccess(argument, pin)
