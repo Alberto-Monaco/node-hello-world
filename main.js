@@ -15,7 +15,7 @@ console.log(pin)
 const argument = process.argv.slice(2)
 console.log(argument)
 
-if (argument === 'admin') {
+if (argument === 'admin' && pin === '666') {
 	console.log('Welcome Admin')
 } else {
 	console.log('Access restricted')
